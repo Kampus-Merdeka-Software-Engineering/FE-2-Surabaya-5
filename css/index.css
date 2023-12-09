@@ -1,0 +1,353 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    background-color: #26313F;
+    font-family: 'Lora';
+    background-image: url('../asset/img/bg_home.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.navbar .navbar-list a {
+    color: #4172AD;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin: 0.6rem;
+}
+
+.navbar .navbar-list a:last-child {
+    margin-right: 0px;
+}
+
+.navbar .navbar-extra a {
+    color: #4172AD;
+    margin: 0 8px;
+}
+
+.bar {
+    width: 1.6rem;
+    height: 2px;
+    background-color: #4172AD;
+    margin: 2px 0;
+    transition: 0.4s;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.content{
+    padding: 3rem 2rem 0px 2rem;
+}
+
+.welcome .content h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding-bottom: 0.6rem;
+    color: #fff;
+}
+
+.welcome .content h1 {
+    font-size: 1.75rem;
+    font-weight: 100;
+    padding-bottom: 0.6rem;
+    color: #FDFFA8;
+}
+
+.welcome .content p {
+    font-size: 2.65rem;
+    font-weight: 700;
+    color: white;
+}
+
+.welcome .box-find {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.welcome .box-find .find {
+    display: flex;
+    height: 3rem;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 0.6rem 0.6rem;
+}
+
+.find .country {
+    width: 25%;
+}
+
+.find .country input {
+    width: 100%;
+    border-right: 1px solid #26313F;
+    height: 1.8rem;
+    padding-left: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.welcome .box-find .find input:nth-child(2),
+.welcome .box-find .find input:nth-child(3) {
+    border-right: 1px solid #26313F;
+    width: 25%;
+    height: 1.8rem;
+    padding-left: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.country .city {
+    width: 100%;
+}
+
+.country .city li {
+    display: none;
+}
+
+.country .city li p {
+    background-color: #fff;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+    color: black;
+    display: flex;
+    text-decoration: none;
+}
+
+.country .city li p:hover:not(.header) {
+    background-color: #eee;
+}
+
+.find button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-left: 0.5rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    text-align: left;
+    width: 25%;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #4172AD;
+}
+
+.find button:hover{
+    background-color: #26313F;
+}
+
+.find button img {
+    width: 1.2rem;
+}
+
+.car {
+    margin-top: 7.5%;
+    width: 100%;
+}
+
+.car img {
+    width: 18%;
+    height: auto;
+    position: absolute;
+    bottom: 6.72rem; 
+    left: 0;
+    animation: animate 15s linear infinite;
+}
+
+@keyframes animate {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 8rem;
+    padding: 1rem;
+    z-index: 0;
+}
+
+.footer .voya {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.voya .address {
+    margin-left: 3rem;
+}
+
+.footer .follme img {
+    width: 1.6rem;
+    margin-top: 0.6rem;
+    margin-right: 0.3rem;
+}
+
+/* Responsive Media Queries */
+/* laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+
+    .car{
+        margin-top: 16.5%;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .navbar {
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
+        position: relative; /* Tambahkan ini */
+    }
+
+    .navbar .navbar-list {
+        position: absolute;
+        top: 6.2rem;
+        width: 20%;
+        right: -20%;
+        height: 100vh;
+        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+
+    .navbar .navbar-list.active {
+        right: 0;
+        z-index: 1000;
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    }
+
+    .navbar .navbar-list a {
+        color: #4172AD;
+        display: block;
+        margin: 0.9rem;
+        padding: 0.3rem;
+        margin-right: 3rem;
+    }
+
+    .navbar .navbar-list a:last-child {
+        margin-right: 3rem;
+    }
+
+    #hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 1.2rem;
+    }
+
+    .welcome{
+        margin-top: 5%;
+        z-index: 1; /* Tambahkan ini */
+    }
+
+    .welcome .box-find {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+
+    .welcome .box-find .find {
+        width: 60%;
+    }
+
+    .car{
+        margin-top: 5%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+
+    .navbar {
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
+    }
+
+    .navbar .navbar-list {
+        top: 7.1rem;
+        width: 30%;
+        right: -30%;
+    }
+
+    .navbar .navbar-list.active {
+        right: 0;
+    }
+
+    .welcome{
+        margin-top: 40%;
+    }
+
+    .welcome .box-find {
+        margin-top: 30%;
+        margin-bottom: 30%;
+    }
+
+    .welcome .box-find .find {
+        width: 90%;
+    }
+
+    .car img {
+        bottom: 7.5rem;
+    }
+}

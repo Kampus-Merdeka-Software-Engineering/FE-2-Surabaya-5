@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>voyagent.com</title>
+
+        <!--Font Link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css?family=Lora:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+        <!-- Link Stylesheet -->
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <img src="asset/img/LOGO WEBSITE TRAVEL GRUP 5.jpg">
+            </a>
+
+            <div class="navbar-list" id="navbar-list">
+                <strong><a href="index.html">Home</a></strong>
+                <a href="schedule.html">Schedule</a>
+                <a href="promotion.html">Promotion</a>
+                <a href="aboutus.html">About Us</a>
+            </div>
+            
+            <div class="navbar-extra" id="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+
+        <main class="welcome" id="home">
+            <div class="content">
+                <h2>Your Dreams Come True</h2>
+                <h1>With</h1>                
+                <p>Voyagent</p>                
+            </div>
+            
+            <div class="box-find">
+                <form class="find" id="findForm" onsubmit="navigateToDestination(); return false;">
+                    <div class="country">
+                        <input type="text" id="country" oninput="listCity()" name="country" placeholder="City or Destination">
+                        <ul class="city">
+                            <li><p>Bali</p></li>
+                            <li><p>Gili Ketapang</p></li>
+                            <li><p>Bromo</p></li>
+                            <li><p>Pacitan</p></li>
+                            <li><p>Jogja</p></li>
+                            <li><p>Batu</p></li>
+                        </ul>
+                    </div>
+
+                    <input type="date" id="date" name="date" placeholder="Date">
+                    <input type="number" id="person" name="person" min="1" placeholder="Person">
+
+                    <button type="submit" id="findButton">Find Your Dream Trip
+                        <img src="asset/icon/3844432-magnifier-search-zoom_110300 1.svg">
+                    </button>
+                </form>
+            </div>
+
+        </main>
+
+        <div class="car">
+            <img src="asset/animation/Desain-tanpa-judul-2--unscreen.gif" alt="Moving Car">
+        </div> 
+
+        <footer class="footer">
+            <div class="voya">
+                <h2>Voyagent</h2>
+                
+                <div class="address">
+                    <p>Location : St. Pulang, no. 101, Tulungaku, Southeast Java, 12345</p>
+                    <p>Contact  : +6285748314958</p>
+                    <p>Email    : voyageant@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="follme">
+                <h4>Follow Me</h4>
+                <img src="asset/icon/insta.svg">
+                <img src="asset/icon/facebook.svg">
+                <img src="asset/icon/twitter.svg">
+            </div>
+        </footer>
+
+        <script src="js/hamburger_menu.js"></script>
+        <script src="/js/index.js"></script>
+        <script src="/js/find_trip.js"></script>
+
+    </body>
+
+</html>
