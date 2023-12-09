@@ -1,5 +1,3 @@
-# FE-2-Surabaya-5
-
 # Voyagent
 
 Voyagent Voyagent is a travel agent which uses website platform to provide travel information for those who
