@@ -17,6 +17,5 @@ website we are ready to compete to become future go to travel agent.
 
 ## Requirements
 
+- Figma
 - Visual Studio Code
-- Node.js
-
